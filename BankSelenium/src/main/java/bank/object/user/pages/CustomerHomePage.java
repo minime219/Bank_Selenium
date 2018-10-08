@@ -21,6 +21,20 @@ public class CustomerHomePage extends PageBaseObject {
 	@FindBy(linkText="Mini Statement")
 	private WebElement MiniStatementLink;
 	
+	@FindBy(linkText="Fund Transfer")
+	private WebElement FundTransferLink;
+	
+	@FindBy(linkText="Customised Statement")
+	private WebElement CustomisedStatementLink;
+	
+	public void customisedStatementClick() {
+		CustomisedStatementLink.click();
+	}
+	
+	public void fundTransferLinkClick() {
+		FundTransferLink.click();
+	}
+	
 	public void miniStatementLinkClick() {
 		MiniStatementLink.click();
 	}

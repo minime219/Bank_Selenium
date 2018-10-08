@@ -1,25 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="16972" started-at="2018-10-08T11:46:55Z" finished-at="2018-10-08T11:47:12Z">
+  <suite name="Default suite" duration-ms="27913" started-at="2018-10-09T07:36:11Z" finished-at="2018-10-09T07:36:39Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="16972" started-at="2018-10-08T11:46:55Z" finished-at="2018-10-08T11:47:12Z">
-      <class name="main.java.bank.testcases.user.ministatement.MiniStatement">
-        <test-method status="PASS" signature="init()[pri:0, instance:main.java.bank.testcases.user.ministatement.MiniStatement@7cd62f43]" name="init" is-config="true" duration-ms="7485" started-at="2018-10-08T11:46:55Z" finished-at="2018-10-08T11:47:02Z">
+    <test name="Default test" duration-ms="27913" started-at="2018-10-09T07:36:11Z" finished-at="2018-10-09T07:36:39Z">
+      <class name="main.java.bank.testcases.user.CustomisedStatement">
+        <test-method status="PASS" signature="init()[pri:0, instance:main.java.bank.testcases.user.CustomisedStatement@7cd62f43]" name="init" is-config="true" duration-ms="6537" started-at="2018-10-09T07:36:11Z" finished-at="2018-10-09T07:36:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="verifyMiniStatement()[pri:0, instance:main.java.bank.testcases.user.ministatement.MiniStatement@7cd62f43]" name="verifyMiniStatement" duration-ms="8667" started-at="2018-10-08T11:47:02Z" finished-at="2018-10-08T11:47:11Z">
+        <test-method status="PASS" signature="verifyStatementOnWrongAcc()[pri:0, instance:main.java.bank.testcases.user.CustomisedStatement@7cd62f43]" name="verifyStatementOnWrongAcc" duration-ms="10774" started-at="2018-10-09T07:36:18Z" finished-at="2018-10-09T07:36:29Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyMiniStatement -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:main.java.bank.testcases.user.ministatement.MiniStatement@7cd62f43]" name="tearDown" is-config="true" duration-ms="788" started-at="2018-10-08T11:47:11Z" finished-at="2018-10-08T11:47:12Z">
+        </test-method> <!-- verifyStatementOnWrongAcc -->
+        <test-method status="PASS" signature="verifyOnNotExistAccNo()[pri:0, instance:main.java.bank.testcases.user.CustomisedStatement@7cd62f43]" name="verifyOnNotExistAccNo" duration-ms="4700" started-at="2018-10-09T07:36:29Z" depends-on-methods="main.java.bank.testcases.user.CustomisedStatement.verifyStatementOnWrongAcc" finished-at="2018-10-09T07:36:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOnNotExistAccNo -->
+        <test-method status="PASS" signature="verifyOnWrongDateInput()[pri:0, instance:main.java.bank.testcases.user.CustomisedStatement@7cd62f43]" name="verifyOnWrongDateInput" duration-ms="5059" started-at="2018-10-09T07:36:33Z" depends-on-methods="main.java.bank.testcases.user.CustomisedStatement.verifyOnNotExistAccNo" finished-at="2018-10-09T07:36:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOnWrongDateInput -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:main.java.bank.testcases.user.CustomisedStatement@7cd62f43]" name="tearDown" is-config="true" duration-ms="793" started-at="2018-10-09T07:36:38Z" finished-at="2018-10-09T07:36:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- main.java.bank.testcases.user.ministatement.MiniStatement -->
+      </class> <!-- main.java.bank.testcases.user.CustomisedStatement -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

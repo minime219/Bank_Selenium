@@ -1,6 +1,7 @@
 package main.java.bank.testcases.user.ministatement;
 import java.io.IOException;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.*;
@@ -44,5 +45,29 @@ public class MiniStatement extends TestCaseObject {
 		miniStatementPage.doMiniStatement(Mapping.AccID);
 		Thread.sleep(2000);
 		scrshot.takesSnapshot(Mapping.ScreenshotFilePath);
+		miniStatementDetailsPage.continueLinkClick();
+		
+	}
+	
+	@Test(dependsOnMethods= {"verifyMiniStatement"})
+	public void verifyWrongAcc() throws InterruptedException {
+		customerHomePage.miniStatementLinkClick();
+		miniStatementPage.doMiniStatement(Mapping.WrongAccID);
+		Thread.sleep(2000);
+		Alert alert = driver.switchTo().alert();
+		Assert.assertEquals(alert.getText(), Mapping.WrongAccNoAlert);
+		alert.accept();
+		Thread.sleep(2000);
+	}
+	
+	@Test(dependsOnMethods= {"verifyWrongAcc"})
+	public void verifyNonExistAcc() throws InterruptedException {
+		miniStatementPage.doMiniStatement(Mapping.NonExistAccNo);
+		Thread.sleep(2000);
+		Alert alert = driver.switchTo().alert();
+		Assert.assertEquals(alert.getText(), Mapping.NonExistAccAlert);
+		alert.accept();
+		Thread.sleep(2000);
+		Assert.assertEquals(driver.getCurrentUrl(), Mapping.StatementInputURL);
 	}
 }
