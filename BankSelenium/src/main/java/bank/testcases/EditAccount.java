@@ -1,5 +1,12 @@
 package main.java.bank.testcases;
-import org.testng.annotations.*;
+import java.io.IOException;
+
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
 
 import main.java.bank.object.AddNewCustomerPage;
 import main.java.bank.object.CustomerRegisteredPage;
@@ -9,12 +16,6 @@ import main.java.bank.object.LogInPage;
 import main.java.bank.object.ManagerPage;
 import main.java.bank.object.Mapping;
 import main.java.bank.object.ScreenshotTake;
-
-import java.io.IOException;
-
-import org.openqa.selenium.Alert;
-import org.openqa.selenium.support.PageFactory;
-import org.testng.Assert;
 
 public class EditAccount extends TestCaseObject {
 	

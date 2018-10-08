@@ -4,7 +4,9 @@ import java.util.Map;
 
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
-import org.testng.annotations.*;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
 
 import main.java.bank.object.EditCustomerDetailsPage;
 import main.java.bank.object.EditCustomerPage;
