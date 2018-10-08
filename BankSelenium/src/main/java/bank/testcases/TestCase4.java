@@ -2,16 +2,19 @@ package main.java.bank.testcases;
 import java.io.File;
 import java.io.IOException;
 import java.util.Date;
-import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.*;
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.NoAlertPresentException;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
-import org.testng.annotations.*;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 import main.java.bank.object.DataProviderClass;
-import main.java.bank.object.ExcelsFiles;
 import main.java.bank.object.LogInPage;
 import main.java.bank.object.ManagerPage;
 import main.java.bank.object.Mapping;

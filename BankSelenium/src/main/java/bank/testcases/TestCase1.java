@@ -1,11 +1,14 @@
 package main.java.bank.testcases;
 
-import org.openqa.selenium.*;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
-import org.testng.annotations.*;
-import main.java.bank.object.*;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+import main.java.bank.object.LogInPage;
+import main.java.bank.object.ManagerPage;
+import main.java.bank.object.Mapping;
 
 public class TestCase1 extends TestCaseObject {
 	

@@ -1,5 +1,13 @@
 package main.java.bank.testcases;
-import org.testng.annotations.*;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
+
+import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
 
 import main.java.bank.object.DepositDetailsPage;
 import main.java.bank.object.DepositPage;
@@ -7,19 +15,6 @@ import main.java.bank.object.LogInPage;
 import main.java.bank.object.ManagerPage;
 import main.java.bank.object.Mapping;
 import main.java.bank.object.ScreenshotTake;
-
-import org.testng.Assert;
-
-import java.io.File;
-import java.io.IOException;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
-
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.support.PageFactory;
 
 public class DepositTestCase extends TestCaseObject {
 	

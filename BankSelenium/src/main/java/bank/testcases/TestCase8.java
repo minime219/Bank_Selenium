@@ -1,9 +1,7 @@
 package main.java.bank.testcases;
-import org.openqa.selenium.*;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
-import org.testng.annotations.*;
-
+import org.testng.annotations.Test;
 
 import main.java.bank.object.AccountAddedPage;
 import main.java.bank.object.AddNewAccountPage;
