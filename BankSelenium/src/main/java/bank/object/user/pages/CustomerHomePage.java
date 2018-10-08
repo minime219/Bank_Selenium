@@ -18,6 +18,13 @@ public class CustomerHomePage extends PageBaseObject {
 	@FindBy(linkText="Balance Enquiry")
 	private WebElement BalanceEnquiryLink;
 	
+	@FindBy(linkText="Mini Statement")
+	private WebElement MiniStatementLink;
+	
+	public void miniStatementLinkClick() {
+		MiniStatementLink.click();
+	}
+	
 	public void balanceEnquiryClick() {
 		BalanceEnquiryLink.click();
 	}
