@@ -1,9 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test thread-count="5" name="Test">
+  <test thread-count="5" name="Test Balance Enquiry">
     <classes>
-      <class name="main.java.bank.testcases.TestCase7"/>
+      <class name="main.java.bank.testcases.user.balance.BalanceEnquiry"/>
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="5" name="Test Fund transfer and Statement">
+  	<classes>
+      <class name="main.java.bank.testcases.user.FundTransferAndStatement"/>
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="5" name="Test LogInAndChangePassword">
+  	<classes>
+      <class name="main.java.bank.testcases.user.login.LogInAndChangePassword"/>
+  	</classes>
+  </test> <!-- Test -->
+  <test thread-count="5" name="Test Edit Customer">
+  	<classes>
+      <class name="main.java.bank.testcases.EditCustomerTestCase"/>
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="5" name="Test Fund Transfer and Customised Statement">
+  	<classes>
+      <class name="main.java.bank.testcases.FundTransferAndCutomizedStatement"/>
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="5" name="Test Deposit">
+  	<classes>
+      <class name="main.java.bank.testcases.DepositTestCase"/>
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="5" name="Test Edit Account">
+  	<classes>
+      <class name="main.java.bank.testcases.EditAccount"/>
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="5" name="Test Customised Statement">
+  	<classes>      
+      <class name="main.java.bank.testcases.user.CustomisedStatement"/>
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="5" name="Test Widrawal">
+  	<classes>   
+	  <class name="main.java.bank.testcases.WithdrawalTestCase"/>
+	</classes>
+  </test> <!-- Test -->
+  <test thread-count="5" name="Test Mini Statement">
+  	<classes>
+      <class name="main.java.bank.testcases.user.ministatement.MiniStatement"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
