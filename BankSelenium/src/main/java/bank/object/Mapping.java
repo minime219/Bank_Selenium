@@ -14,7 +14,7 @@ public class Mapping {
 	public static String ScreenshotFilePath = System.getProperty("user.dir")+"\\src\\main\\java\\bank\\screenshots\\Test_Manager_Page_";
 	public static String ChangePasswordLink = "Change Password";
 	public static String OldPasswordFalse = "123456";
-	public static String NewPassword = "pymAzUg";
+	public static String NewPassword = "123456_7";
 	public static String FalseOldPasswordAlert = "Old Password is incorrect";
 	public static String HeaderChangePassword = "Change Password";
 	public static String ChangePasswordAlert = "Password is Changed";
