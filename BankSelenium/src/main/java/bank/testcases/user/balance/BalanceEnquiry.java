@@ -1,6 +1,12 @@
 package main.java.bank.testcases.user.balance;
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
 
+import org.openqa.selenium.Platform;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.*;
@@ -12,7 +18,7 @@ import main.java.bank.object.user.pages.CustomerHomePage;
 import main.java.bank.testcases.TestCaseObject;
 
 public class BalanceEnquiry extends TestCaseObject {
-	
+//	WebDriver driver;
 	LogInPage logInPage;
 	CustomerHomePage customerPage;
 	BalanceEnquiryPage balanceEnquiryPage;
@@ -20,8 +26,13 @@ public class BalanceEnquiry extends TestCaseObject {
 	ScreenshotTake scrShot;
 	
 	@BeforeTest
-	public void init() {
+	public void init() throws MalformedURLException {
 		super.setUp(Mapping.LogInURL);
+	/*	System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
+		DesiredCapabilities capa = DesiredCapabilities.chrome();
+		capa.setBrowserName("chrome");
+		capa.setPlatform(Platform.VISTA);
+		driver = new RemoteWebDriver(new URL("http://192.168.56.1:4444/wd/hub"), capa); */
 		logInPage = PageFactory.initElements(driver, LogInPage.class);
 		customerPage = new CustomerHomePage(driver);
 		balanceEnquiryPage = new BalanceEnquiryPage(driver);

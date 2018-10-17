@@ -1,100 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="Test LogInAndChangePassword(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="main.java.bank.testcases.user.login.LogInAndChangePassword">
+      <class name="main.java.bank.testcases.user.balance.BalanceEnquiry">
         <methods>
-          <include name="verifyLogInChangedCredential"/>
-          <include name="verifyAfterPasswordChanged"/>
           <include name="tearDown"/>
-          <include name="incorrectOldPasswordOnChangePassword"/>
           <include name="init"/>
+          <include name="balanceEnquiry"/>
         </methods>
-      </class> <!-- main.java.bank.testcases.user.login.LogInAndChangePassword -->
+      </class> <!-- main.java.bank.testcases.user.balance.BalanceEnquiry -->
     </classes>
-  </test> <!-- Test LogInAndChangePassword(failed) -->
-  <test thread-count="5" name="Test Fund Transfer and Customised Statement(failed)">
-    <classes>
-      <class name="main.java.bank.testcases.FundTransferAndCutomizedStatement">
-        <methods>
-          <include name="verifyTransferWrongAcc"/>
-          <include name="tearDown"/>
-          <include name="verifyTransferFundHigh"/>
-          <include name="setUp"/>
-          <include name="verifyTransferDetails"/>
-          <include name="verifyTransferSameAcc"/>
-          <include name="verifyFundTransfers"/>
-          <include name="reloadedVerifyFundTransfer"/>
-        </methods>
-      </class> <!-- main.java.bank.testcases.FundTransferAndCutomizedStatement -->
-    </classes>
-  </test> <!-- Test Fund Transfer and Customised Statement(failed) -->
-  <test thread-count="5" name="Test Deposit(failed)">
-    <classes>
-      <class name="main.java.bank.testcases.DepositTestCase">
-        <methods>
-          <include name="verifyDepositMade"/>
-          <include name="init"/>
-          <include name="tearDown"/>
-          <include name="verifyDepositRedirect"/>
-        </methods>
-      </class> <!-- main.java.bank.testcases.DepositTestCase -->
-    </classes>
-  </test> <!-- Test Deposit(failed) -->
-  <test thread-count="5" name="Test Edit Account(failed)">
-    <classes>
-      <class name="main.java.bank.testcases.EditAccount">
-        <methods>
-          <include name="init"/>
-          <include name="verifyEditAccount"/>
-          <include name="tearDown"/>
-          <include name="verifyUserCreated"/>
-          <include name="verifyLogOut"/>
-        </methods>
-      </class> <!-- main.java.bank.testcases.EditAccount -->
-    </classes>
-  </test> <!-- Test Edit Account(failed) -->
-  <test thread-count="5" name="Test Customised Statement(failed)">
-    <classes>
-      <class name="main.java.bank.testcases.user.CustomisedStatement">
-        <methods>
-          <include name="verifyOnNotExistAccNo"/>
-          <include name="verifyStatementOnWrongAcc"/>
-          <include name="init"/>
-          <include name="verifyOnWrongDateInput"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- main.java.bank.testcases.user.CustomisedStatement -->
-    </classes>
-  </test> <!-- Test Customised Statement(failed) -->
-  <test thread-count="5" name="Test Widrawal(failed)">
-    <classes>
-      <class name="main.java.bank.testcases.WithdrawalTestCase">
-        <methods>
-          <include name="verifyBalaceEnquiry"/>
-          <include name="verifyWithdrawal"/>
-          <include name="verifyCustomizedStatement"/>
-          <include name="verifyWithdrawalOnLowBalance"/>
-          <include name="init"/>
-          <include name="verifyCustomizedStatementWrongDate"/>
-          <include name="tearDown"/>
-          <include name="verifyMiniStatement"/>
-        </methods>
-      </class> <!-- main.java.bank.testcases.WithdrawalTestCase -->
-    </classes>
-  </test> <!-- Test Widrawal(failed) -->
-  <test thread-count="5" name="Test Mini Statement(failed)">
-    <classes>
-      <class name="main.java.bank.testcases.user.ministatement.MiniStatement">
-        <methods>
-          <include name="verifyNonExistAcc"/>
-          <include name="init"/>
-          <include name="verifyMiniStatement"/>
-          <include name="verifyWrongAcc"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- main.java.bank.testcases.user.ministatement.MiniStatement -->
-    </classes>
-  </test> <!-- Test Mini Statement(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

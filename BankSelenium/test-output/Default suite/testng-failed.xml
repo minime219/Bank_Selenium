@@ -3,15 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="main.java.bank.testcases.user.CustomisedStatement">
+      <class name="main.java.bank.testcases.user.balance.BalanceEnquiry">
         <methods>
-          <include name="verifyOnNotExistAccNo"/>
-          <include name="verifyStatementOnWrongAcc"/>
-          <include name="init"/>
-          <include name="verifyOnWrongDateInput"/>
           <include name="tearDown"/>
+          <include name="init"/>
+          <include name="balanceEnquiry"/>
         </methods>
-      </class> <!-- main.java.bank.testcases.user.CustomisedStatement -->
+      </class> <!-- main.java.bank.testcases.user.balance.BalanceEnquiry -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

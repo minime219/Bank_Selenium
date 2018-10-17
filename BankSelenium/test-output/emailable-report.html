@@ -8,331 +8,139 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Suite</th></tr>
-<tr><td><a href="#t0">Test Balance Enquiry</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">17.270</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">Test Fund transfer and Statement</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num">44.021</td><td></td><td></td></tr>
-<tr><td><a href="#t2">Test LogInAndChangePassword</a></td><td class="num">0</td><td class="num attn">2</td><td class="num attn">1</td><td class="num">9.174</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t3">Test Edit Customer</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">15.935</td><td></td><td></td></tr>
-<tr><td><a href="#t4">Test Fund Transfer and Customised Statement</a></td><td class="num">3</td><td class="num attn">2</td><td class="num attn">1</td><td class="num">90.647</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t5">Test Deposit</a></td><td class="num">0</td><td class="num attn">1</td><td class="num attn">1</td><td class="num">35.468</td><td></td><td></td></tr>
-<tr><td><a href="#t6">Test Edit Account</a></td><td class="num">0</td><td class="num attn">3</td><td class="num">0</td><td class="num">7.227</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t7">Test Customised Statement</a></td><td class="num">0</td><td class="num attn">3</td><td class="num">0</td><td class="num">2.628</td><td></td><td></td></tr>
-<tr><td><a href="#t8">Test Widrawal</a></td><td class="num">0</td><td class="num attn">6</td><td class="num">0</td><td class="num">2.597</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t9">Test Mini Statement</a></td><td class="num">0</td><td class="num attn">3</td><td class="num">0</td><td class="num">3.002</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">11</th><th class="num attn">20</th><th class="num attn">3</th><th class="num">227.969</th><th colspan="2"></th></tr>
+<tr><th colspan="7">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">563.422</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test Balance Enquiry &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">main.java.bank.testcases.user.balance.BalanceEnquiry</td><td><a href="#m0">balanceEnquiry</a></td><td rowspan="1">1539076204493</td><td rowspan="1">9411</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">Test Fund transfer and Statement &#8212; passed</th></tr><tr class="passedeven"><td rowspan="6">main.java.bank.testcases.user.FundTransferAndStatement</td><td><a href="#m1">verifyCustomizedStatement</a></td><td rowspan="1">1539076231708</td><td rowspan="1">5774</td></tr><tr class="passedeven"><td><a href="#m2">verifyFundTransfer</a></td><td rowspan="1">1539076220484</td><td rowspan="1">8378</td></tr><tr class="passedeven"><td><a href="#m3">verifyRefreshingFundDetails</a></td><td rowspan="1">1539076228865</td><td rowspan="1">2839</td></tr><tr class="passedeven"><td><a href="#m4">verifyTransferOnNotAuthorizationAcc</a></td><td rowspan="1">1539076237486</td><td rowspan="1">8394</td></tr><tr class="passedeven"><td><a href="#m5">verifyTransferToSameAcc</a></td><td rowspan="1">1539076252894</td><td rowspan="1">4997</td></tr><tr class="passedeven"><td><a href="#m6">verifyTransfertoNonExistAcc</a></td><td rowspan="1">1539076245882</td><td rowspan="1">7007</td></tr></tbody>
-<tbody id="t2"><tr><th colspan="4">Test LogInAndChangePassword &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">main.java.bank.testcases.user.login.LogInAndChangePassword</td><td><a href="#m7">incorrectOldPasswordOnChangePassword</a></td><td rowspan="1">1539076264519</td><td rowspan="1">2670</td></tr><tr><th colspan="4">Test LogInAndChangePassword &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="2">main.java.bank.testcases.user.login.LogInAndChangePassword</td><td><a href="#m8">verifyAfterPasswordChanged</a></td><td rowspan="1">1539076267193</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m9">verifyLogInChangedCredential</a></td><td rowspan="1">1539076267194</td><td rowspan="1">0</td></tr></tbody>
-<tbody id="t3"><tr><th colspan="4">Test Edit Customer &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">main.java.bank.testcases.EditCustomerTestCase</td><td><a href="#m10">verifyEditCustomer</a></td><td rowspan="1">1539076274108</td><td rowspan="1">9110</td></tr></tbody>
-<tbody id="t4"><tr><th colspan="4">Test Fund Transfer and Customised Statement &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">main.java.bank.testcases.FundTransferAndCutomizedStatement</td><td><a href="#m11">verifyTransferWrongAcc</a></td><td rowspan="1">1539076313345</td><td rowspan="1">60559</td></tr><tr><th colspan="4">Test Fund Transfer and Customised Statement &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="2">main.java.bank.testcases.FundTransferAndCutomizedStatement</td><td><a href="#m12">verifyTransferFundHigh</a></td><td rowspan="1">1539076373908</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m13">verifyTransferSameAcc</a></td><td rowspan="1">1539076373906</td><td rowspan="1">0</td></tr><tr><th colspan="4">Test Fund Transfer and Customised Statement &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">main.java.bank.testcases.FundTransferAndCutomizedStatement</td><td><a href="#m14">reloadedVerifyFundTransfer</a></td><td rowspan="1">1539076296791</td><td rowspan="1">10506</td></tr><tr class="passedeven"><td><a href="#m15">verifyFundTransfers</a></td><td rowspan="1">1539076290717</td><td rowspan="1">6073</td></tr><tr class="passedeven"><td><a href="#m16">verifyTransferDetails</a></td><td rowspan="1">1539076307299</td><td rowspan="1">6044</td></tr></tbody>
-<tbody id="t5"><tr><th colspan="4">Test Deposit &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">main.java.bank.testcases.DepositTestCase</td><td><a href="#m17">verifyDepositMade</a></td><td rowspan="1">1539076399439</td><td rowspan="1">10032</td></tr><tr><th colspan="4">Test Deposit &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">main.java.bank.testcases.DepositTestCase</td><td><a href="#m18">verifyDepositRedirect</a></td><td rowspan="1">1539076409474</td><td rowspan="1">0</td></tr></tbody>
-<tbody id="t6"><tr><th colspan="4">Test Edit Account &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">main.java.bank.testcases.EditAccount</td><td><a href="#m19">init</a></td><td rowspan="1">1539076410309</td><td rowspan="1">7212</td></tr><tr><th colspan="4">Test Edit Account &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">main.java.bank.testcases.EditAccount</td><td><a href="#m20">tearDown</a></td><td rowspan="1">1539076417532</td><td rowspan="1">0</td></tr><tr><th colspan="4">Test Edit Account &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="3">main.java.bank.testcases.EditAccount</td><td><a href="#m21">verifyEditAccount</a></td><td rowspan="1">1539076417527</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m22">verifyLogOut</a></td><td rowspan="1">1539076417528</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m23">verifyUserCreated</a></td><td rowspan="1">1539076417530</td><td rowspan="1">0</td></tr></tbody>
-<tbody id="t7"><tr><th colspan="4">Test Customised Statement &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">main.java.bank.testcases.user.CustomisedStatement</td><td><a href="#m24">init</a></td><td rowspan="1">1539076417667</td><td rowspan="1">2617</td></tr><tr><th colspan="4">Test Customised Statement &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">main.java.bank.testcases.user.CustomisedStatement</td><td><a href="#m25">tearDown</a></td><td rowspan="1">1539076420294</td><td rowspan="1">0</td></tr><tr><th colspan="4">Test Customised Statement &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="3">main.java.bank.testcases.user.CustomisedStatement</td><td><a href="#m26">verifyOnNotExistAccNo</a></td><td rowspan="1">1539076420290</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m27">verifyOnWrongDateInput</a></td><td rowspan="1">1539076420292</td><td rowspan="1">1</td></tr><tr class="skippedeven"><td><a href="#m28">verifyStatementOnWrongAcc</a></td><td rowspan="1">1539076420288</td><td rowspan="1">0</td></tr></tbody>
-<tbody id="t8"><tr><th colspan="4">Test Widrawal &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">main.java.bank.testcases.WithdrawalTestCase</td><td><a href="#m29">init</a></td><td rowspan="1">1539076420437</td><td rowspan="1">2578</td></tr><tr><th colspan="4">Test Widrawal &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">main.java.bank.testcases.WithdrawalTestCase</td><td><a href="#m30">tearDown</a></td><td rowspan="1">1539076423029</td><td rowspan="1">0</td></tr><tr><th colspan="4">Test Widrawal &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="6">main.java.bank.testcases.WithdrawalTestCase</td><td><a href="#m31">verifyBalaceEnquiry</a></td><td rowspan="1">1539076423023</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m32">verifyCustomizedStatement</a></td><td rowspan="1">1539076423026</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m33">verifyCustomizedStatementWrongDate</a></td><td rowspan="1">1539076423027</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m34">verifyMiniStatement</a></td><td rowspan="1">1539076423022</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m35">verifyWithdrawal</a></td><td rowspan="1">1539076423019</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m36">verifyWithdrawalOnLowBalance</a></td><td rowspan="1">1539076423021</td><td rowspan="1">0</td></tr></tbody>
-<tbody id="t9"><tr><th colspan="4">Test Mini Statement &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">main.java.bank.testcases.user.ministatement.MiniStatement</td><td><a href="#m37">init</a></td><td rowspan="1">1539076423193</td><td rowspan="1">2989</td></tr><tr><th colspan="4">Test Mini Statement &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">main.java.bank.testcases.user.ministatement.MiniStatement</td><td><a href="#m38">tearDown</a></td><td rowspan="1">1539076426190</td><td rowspan="1">0</td></tr><tr><th colspan="4">Test Mini Statement &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="3">main.java.bank.testcases.user.ministatement.MiniStatement</td><td><a href="#m39">verifyMiniStatement</a></td><td rowspan="1">1539076426185</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m40">verifyNonExistAcc</a></td><td rowspan="1">1539076426189</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m41">verifyWrongAcc</a></td><td rowspan="1">1539076426187</td><td rowspan="1">0</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">main.java.bank.testcases.user.balance.BalanceEnquiry</td><td><a href="#m0">init</a></td><td rowspan="1">1539699468299</td><td rowspan="1">563324</td></tr><tr><th colspan="4">Default test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">main.java.bank.testcases.user.balance.BalanceEnquiry</td><td><a href="#m1">tearDown</a></td><td rowspan="1">1539700031700</td><td rowspan="1">0</td></tr><tr><th colspan="4">Default test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">main.java.bank.testcases.user.balance.BalanceEnquiry</td><td><a href="#m2">balanceEnquiry</a></td><td rowspan="1">1539700031693</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>Test Balance Enquiry</h2><h3 id="m0">main.java.bank.testcases.user.balance.BalanceEnquiry#balanceEnquiry</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Test Fund transfer and Statement</h2><h3 id="m1">main.java.bank.testcases.user.FundTransferAndStatement#verifyCustomizedStatement</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">main.java.bank.testcases.user.FundTransferAndStatement#verifyFundTransfer</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">main.java.bank.testcases.user.FundTransferAndStatement#verifyRefreshingFundDetails</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">main.java.bank.testcases.user.FundTransferAndStatement#verifyTransferOnNotAuthorizationAcc</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">main.java.bank.testcases.user.FundTransferAndStatement#verifyTransferToSameAcc</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">main.java.bank.testcases.user.FundTransferAndStatement#verifyTransfertoNonExistAcc</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Test LogInAndChangePassword</h2><h3 id="m7">main.java.bank.testcases.user.login.LogInAndChangePassword#incorrectOldPasswordOnChangePassword</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : User or Password is not valid}
-  (Session info: chrome=69.0.3497.100)
-  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds: null
+<h2>Default test</h2><h3 id="m0">main.java.bank.testcases.user.balance.BalanceEnquiry#init</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
 Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:32:14.902Z&apos;
-System info: host: &apos;XUXE&apos;, ip: &apos;172.111.200.50&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\X240\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
-Session ID: 1ccc23a44fea882fc96c50043238788d
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:172)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+System info: host: &apos;XUXE&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:130)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:143)
+	at main.java.bank.testcases.user.balance.BalanceEnquiry.init(BalanceEnquiry.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:529)
+	at org.testng.TestRunner.run(TestRunner.java:497)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at okio.Okio$2.read(Okio.java:140)
+	at okio.AsyncTimeout$2.read(AsyncTimeout.java:237)
+	at okio.RealBufferedSource.indexOf(RealBufferedSource.java:355)
+	at okio.RealBufferedSource.readUtf8LineStrict(RealBufferedSource.java:227)
+	at okhttp3.internal.http1.Http1Codec.readHeaderLine(Http1Codec.java:215)
+	at okhttp3.internal.http1.Http1Codec.readResponseHeaders(Http1Codec.java:189)
+	at okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.java:88)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:45)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+	at okhttp3.RealCall.execute(RealCall.java:77)
+	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:105)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:101)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
-	at org.openqa.selenium.remote.RemoteWebDriver.getCurrentUrl(RemoteWebDriver.java:286)
-	at main.java.bank.testcases.user.login.LogInAndChangePassword.incorrectOldPasswordOnChangePassword(LogInAndChangePassword.java:37)
-... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">main.java.bank.testcases.user.login.LogInAndChangePassword#verifyAfterPasswordChanged</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method LogInAndChangePassword.verifyAfterPasswordChanged()[pri:0, instance:main.java.bank.testcases.user.login.LogInAndChangePassword@56235b8e] depends on not successfully finished methods
-... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m9">main.java.bank.testcases.user.login.LogInAndChangePassword#verifyLogInChangedCredential</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method LogInAndChangePassword.verifyLogInChangedCredential()[pri:0, instance:main.java.bank.testcases.user.login.LogInAndChangePassword@56235b8e] depends on not successfully finished methods
-... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Test Edit Customer</h2><h3 id="m10">main.java.bank.testcases.EditCustomerTestCase#verifyEditCustomer</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Test Fund Transfer and Customised Statement</h2><h3 id="m11">main.java.bank.testcases.FundTransferAndCutomizedStatement#verifyTransferWrongAcc</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoAlertPresentException: no such alert
-  (Session info: chrome=69.0.3497.100)
-  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
+	... 28 more
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">main.java.bank.testcases.user.balance.BalanceEnquiry#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">main.java.bank.testcases.user.balance.BalanceEnquiry#balanceEnquiry</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
 Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:32:14.902Z&apos;
-System info: host: &apos;XUXE&apos;, ip: &apos;172.111.200.50&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\X240\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
-Session ID: 607bbd03da3aa876b376ef4b2e9cb994
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+System info: host: &apos;XUXE&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:130)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:143)
+	at main.java.bank.testcases.user.balance.BalanceEnquiry.init(BalanceEnquiry.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:529)
+	at org.testng.TestRunner.run(TestRunner.java:497)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at okio.Okio$2.read(Okio.java:140)
+	at okio.AsyncTimeout$2.read(AsyncTimeout.java:237)
+	at okio.RealBufferedSource.indexOf(RealBufferedSource.java:355)
+	at okio.RealBufferedSource.readUtf8LineStrict(RealBufferedSource.java:227)
+	at okhttp3.internal.http1.Http1Codec.readHeaderLine(Http1Codec.java:215)
+	at okhttp3.internal.http1.Http1Codec.readResponseHeaders(Http1Codec.java:189)
+	at okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.java:88)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:45)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+	at okhttp3.RealCall.execute(RealCall.java:77)
+	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:105)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:101)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:928)
-	at main.java.bank.testcases.FundTransferAndCutomizedStatement.verifyTransferWrongAcc(FundTransferAndCutomizedStatement.java:95)
-... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m12">main.java.bank.testcases.FundTransferAndCutomizedStatement#verifyTransferFundHigh</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method FundTransferAndCutomizedStatement.verifyTransferFundHigh()[pri:0, instance:main.java.bank.testcases.FundTransferAndCutomizedStatement@6c3708b3] depends on not successfully finished methods
-... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m13">main.java.bank.testcases.FundTransferAndCutomizedStatement#verifyTransferSameAcc</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method FundTransferAndCutomizedStatement.verifyTransferSameAcc()[pri:0, instance:main.java.bank.testcases.FundTransferAndCutomizedStatement@6c3708b3] depends on not successfully finished methods
-... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m14">main.java.bank.testcases.FundTransferAndCutomizedStatement#reloadedVerifyFundTransfer</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m15">main.java.bank.testcases.FundTransferAndCutomizedStatement#verifyFundTransfers</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m16">main.java.bank.testcases.FundTransferAndCutomizedStatement#verifyTransferDetails</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Test Deposit</h2><h3 id="m17">main.java.bank.testcases.DepositTestCase#verifyDepositMade</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;name&quot;,&quot;selector&quot;:&quot;uid&quot;}
-  (Session info: chrome=69.0.3497.100)
-  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:32:14.902Z&apos;
-System info: host: &apos;XUXE&apos;, ip: &apos;172.111.200.50&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\X240\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
-Session ID: 6bbec197031bf66666c293b42e845fd2
-*** Element info: {Using=name, value=uid}
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:400)
-	at org.openqa.selenium.By$ByName.findElement(By.java:284)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy9.clear(Unknown Source)
-	at main.java.bank.object.LogInPage.doLogIn(LogInPage.java:27)
-	at main.java.bank.testcases.DepositTestCase.verifyDepositMade(DepositTestCase.java:44)
-... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m18">main.java.bank.testcases.DepositTestCase#verifyDepositRedirect</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method DepositTestCase.verifyDepositRedirect()[pri:0, instance:main.java.bank.testcases.DepositTestCase@5a8e6209] depends on not successfully finished methods
-... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Test Edit Account</h2><h3 id="m19">main.java.bank.testcases.EditAccount#init</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
-  (Session info: chrome=69.0.3497.100)
-  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:32:14.902Z&apos;
-System info: host: &apos;XUXE&apos;, ip: &apos;172.111.200.50&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\X240\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
-Session ID: d3668445a291600fac5da49b213f9c06
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
-	at main.java.bank.testcases.TestCaseObject.setUp(TestCaseObject.java:22)
-	at main.java.bank.testcases.EditAccount.init(EditAccount.java:32)
-... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m20">main.java.bank.testcases.EditAccount#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m21">main.java.bank.testcases.EditAccount#verifyEditAccount</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
-  (Session info: chrome=69.0.3497.100)
-  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:32:14.902Z&apos;
-System info: host: &apos;XUXE&apos;, ip: &apos;172.111.200.50&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\X240\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
-Session ID: d3668445a291600fac5da49b213f9c06
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
-	at main.java.bank.testcases.TestCaseObject.setUp(TestCaseObject.java:22)
-	at main.java.bank.testcases.EditAccount.init(EditAccount.java:32)
-... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m22">main.java.bank.testcases.EditAccount#verifyLogOut</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method EditAccount.verifyLogOut()[pri:0, instance:main.java.bank.testcases.EditAccount@1d16f93d] depends on not successfully finished methods
-... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m23">main.java.bank.testcases.EditAccount#verifyUserCreated</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method EditAccount.verifyUserCreated()[pri:0, instance:main.java.bank.testcases.EditAccount@1d16f93d] depends on not successfully finished methods
-... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Test Customised Statement</h2><h3 id="m24">main.java.bank.testcases.user.CustomisedStatement#init</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
-  (Session info: chrome=69.0.3497.100)
-  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:32:14.902Z&apos;
-System info: host: &apos;XUXE&apos;, ip: &apos;172.111.200.50&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\X240\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
-Session ID: c7b39bc86370995477429b2d7eb748d2
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
-	at main.java.bank.testcases.TestCaseObject.setUp(TestCaseObject.java:22)
-	at main.java.bank.testcases.user.CustomisedStatement.init(CustomisedStatement.java:27)
-... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m25">main.java.bank.testcases.user.CustomisedStatement#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m26">main.java.bank.testcases.user.CustomisedStatement#verifyOnNotExistAccNo</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method CustomisedStatement.verifyOnNotExistAccNo()[pri:0, instance:main.java.bank.testcases.user.CustomisedStatement@47ef968d] depends on not successfully finished methods
-... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m27">main.java.bank.testcases.user.CustomisedStatement#verifyOnWrongDateInput</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method CustomisedStatement.verifyOnWrongDateInput()[pri:0, instance:main.java.bank.testcases.user.CustomisedStatement@47ef968d] depends on not successfully finished methods
-... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m28">main.java.bank.testcases.user.CustomisedStatement#verifyStatementOnWrongAcc</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
-  (Session info: chrome=69.0.3497.100)
-  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:32:14.902Z&apos;
-System info: host: &apos;XUXE&apos;, ip: &apos;172.111.200.50&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\X240\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
-Session ID: c7b39bc86370995477429b2d7eb748d2
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
-	at main.java.bank.testcases.TestCaseObject.setUp(TestCaseObject.java:22)
-	at main.java.bank.testcases.user.CustomisedStatement.init(CustomisedStatement.java:27)
-... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Test Widrawal</h2><h3 id="m29">main.java.bank.testcases.WithdrawalTestCase#init</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
-  (Session info: chrome=69.0.3497.100)
-  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:32:14.902Z&apos;
-System info: host: &apos;XUXE&apos;, ip: &apos;172.111.200.50&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\X240\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
-Session ID: 35f6a299348d465500819f7470bf1011
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
-	at main.java.bank.testcases.TestCaseObject.setUp(TestCaseObject.java:22)
-	at main.java.bank.testcases.WithdrawalTestCase.init(WithdrawalTestCase.java:48)
-... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m30">main.java.bank.testcases.WithdrawalTestCase#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m31">main.java.bank.testcases.WithdrawalTestCase#verifyBalaceEnquiry</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method WithdrawalTestCase.verifyBalaceEnquiry()[pri:0, instance:main.java.bank.testcases.WithdrawalTestCase@2b552920] depends on not successfully finished methods
-... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m32">main.java.bank.testcases.WithdrawalTestCase#verifyCustomizedStatement</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method WithdrawalTestCase.verifyCustomizedStatement()[pri:0, instance:main.java.bank.testcases.WithdrawalTestCase@2b552920] depends on not successfully finished methods
-... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m33">main.java.bank.testcases.WithdrawalTestCase#verifyCustomizedStatementWrongDate</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method WithdrawalTestCase.verifyCustomizedStatementWrongDate()[pri:0, instance:main.java.bank.testcases.WithdrawalTestCase@2b552920] depends on not successfully finished methods
-... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m34">main.java.bank.testcases.WithdrawalTestCase#verifyMiniStatement</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method WithdrawalTestCase.verifyMiniStatement()[pri:0, instance:main.java.bank.testcases.WithdrawalTestCase@2b552920] depends on not successfully finished methods
-... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m35">main.java.bank.testcases.WithdrawalTestCase#verifyWithdrawal</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
-  (Session info: chrome=69.0.3497.100)
-  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:32:14.902Z&apos;
-System info: host: &apos;XUXE&apos;, ip: &apos;172.111.200.50&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\X240\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
-Session ID: 35f6a299348d465500819f7470bf1011
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
-	at main.java.bank.testcases.TestCaseObject.setUp(TestCaseObject.java:22)
-	at main.java.bank.testcases.WithdrawalTestCase.init(WithdrawalTestCase.java:48)
-... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m36">main.java.bank.testcases.WithdrawalTestCase#verifyWithdrawalOnLowBalance</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method WithdrawalTestCase.verifyWithdrawalOnLowBalance()[pri:0, instance:main.java.bank.testcases.WithdrawalTestCase@2b552920] depends on not successfully finished methods
-... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Test Mini Statement</h2><h3 id="m37">main.java.bank.testcases.user.ministatement.MiniStatement#init</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
-  (Session info: chrome=69.0.3497.100)
-  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:32:14.902Z&apos;
-System info: host: &apos;XUXE&apos;, ip: &apos;172.111.200.50&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\X240\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
-Session ID: 45905217f0cf30fca6a3a1dd566e77cb
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
-	at main.java.bank.testcases.TestCaseObject.setUp(TestCaseObject.java:22)
-	at main.java.bank.testcases.user.ministatement.MiniStatement.init(MiniStatement.java:26)
-... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m38">main.java.bank.testcases.user.ministatement.MiniStatement#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m39">main.java.bank.testcases.user.ministatement.MiniStatement#verifyMiniStatement</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
-  (Session info: chrome=69.0.3497.100)
-  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:32:14.902Z&apos;
-System info: host: &apos;XUXE&apos;, ip: &apos;172.111.200.50&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\X240\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
-Session ID: 45905217f0cf30fca6a3a1dd566e77cb
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
-	at main.java.bank.testcases.TestCaseObject.setUp(TestCaseObject.java:22)
-	at main.java.bank.testcases.user.ministatement.MiniStatement.init(MiniStatement.java:26)
-... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m40">main.java.bank.testcases.user.ministatement.MiniStatement#verifyNonExistAcc</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method MiniStatement.verifyNonExistAcc()[pri:0, instance:main.java.bank.testcases.user.ministatement.MiniStatement@3cef309d] depends on not successfully finished methods
-... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m41">main.java.bank.testcases.user.ministatement.MiniStatement#verifyWrongAcc</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method MiniStatement.verifyWrongAcc()[pri:0, instance:main.java.bank.testcases.user.ministatement.MiniStatement@3cef309d] depends on not successfully finished methods
-... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+	... 28 more
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
