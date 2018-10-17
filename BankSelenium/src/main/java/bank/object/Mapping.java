@@ -2,8 +2,8 @@ package main.java.bank.object;
 
 public class Mapping {
 	
-	public static String User = "mngr154622";
-	public static String Password = "1234567_8";
+	public static String User = "mngr158495";
+	public static String Password = "pymAzUg";
 	public static String LogInURL = "http://www.demo.guru99.com/V4/index.php";
 	public static String ManagerXpath = "//*[@class='heading3']";
 	public static String ManagerWelcome = "Welcome To Manager's Page of Guru99 Bank";
