@@ -48,7 +48,7 @@ public class Mapping {
 	public static String CustomerNotExistAlert = "Customer does not exist!!";
 	public static String DeleteCustomerHeader = "Delete Customer Form";
 	public static String CustomerID_2 = "26260";
-	public static String AccID_2 = "52260";
+	public static String AccID_2 = "49908";
 	public static String AccNotExist = "9999999999";
 	public static String FundTransferHeader = "Fund transfer";
 	public static String FundTransferDesc = "cash";

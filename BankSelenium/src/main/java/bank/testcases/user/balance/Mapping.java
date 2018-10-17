@@ -9,7 +9,7 @@ public class Mapping {
 	public static String BalanceDetailsURL = "http://www.demo.guru99.com/V4/customer/BalEnquiry.php";
 	public static String BalanceDetailsHeader = "Balance Details for Account ";
 	public static String ScreenshotFilePath = System.getProperty("user.dir")+"\\src\\main\\java\\bank\\testcases\\user\\balance\\screenshots\\Test_Balance_Enquiry_Page_";
-	public static String PayeeAcc = "49456";
+	public static String PayeeAcc = "49908";
 	public static String Ammount = "10";
 	public static String Desc = "fund";
 	public static String ScreenshotFunTransferFilePath = System.getProperty("user.dir")+"\\src\\main\\java\\bank\\testcases\\user\\funtransfer\\screenshots\\Test_Fund_Transfer_Page_";
